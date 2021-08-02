@@ -16,7 +16,7 @@ module Isuda
     enable :sessions
 
     set :erb, escape_html: true
-    set :public_folder, File.expand_path('../../../../public', __FILE__)
+    set :public_folder, File.expand_path('/home/isucon/webapp/public', __FILE__)
     set :db_user, ENV['ISUDA_DB_USER'] || 'root'
     set :db_password, ENV['ISUDA_DB_PASSWORD'] || ''
     set :dsn, ENV['ISUDA_DSN'] || 'dbi:mysql:db=isuda'
